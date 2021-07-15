@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.clock-container {
+  font-size: 50px;
+  border-bottom: 2px solid #f3969a;
+}
+.clock-container p {
+  color: #f3969a;
+}

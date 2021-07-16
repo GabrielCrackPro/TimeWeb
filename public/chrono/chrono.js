@@ -13,9 +13,18 @@ chronoContainer.innerHTML = `
 <p class="seconds-number text-center">0</p>
 <p class="seconds-text">Seconds</p>
 </div>
+<div class="chrono-buttons d-flex position-absolute">
+<button class="btn btn-light  play-btn">Play</button>
+<button class="btn btn-light stop-btn">Stop</button>
+<button class="btn btn-light reset-btn">Reset</button>
+</div>
 `;
-const clockText = document.querySelectorAll(".clock-container p");
+const chronoText = document.querySelectorAll(".chrono-container p");
+const chronoButtons = document.querySelectorAll(".chrono-buttons button");
 
-clockText.forEach((text) => {
+chronoText.forEach((text) => {
   text.classList.add("fw-bold");
+});
+chronoButtons.forEach((button) => {
+  button.classList.add("me-2");
 });
